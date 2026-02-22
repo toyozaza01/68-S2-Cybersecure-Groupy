@@ -1,5 +1,5 @@
 services:  
-  CyberHub-S1_db: 
+  CyberHub-S2_db: 
       image: postgres:latest
       container_name: CyberHub-Database
       ports:
@@ -8,4 +8,3 @@ services:
         POSTGRES_USER: ${DATABASE_USER}
         POSTGRES_DB: ${DATABASE_NAME}
         POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-  
