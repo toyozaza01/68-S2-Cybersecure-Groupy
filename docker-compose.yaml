@@ -8,3 +8,12 @@ services:
         POSTGRES_USER: ${DATABASE_USER}
         POSTGRES_DB: ${DATABASE_NAME}
         POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+  
+  CyberHub-S2_admin:  
+      image: dpage/pgadmin4
+      container_name: CyberHub-Admin
+      ports:
+        - ${ADMIN_PORT}:80
+      environment:
+        PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+        PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD} 
